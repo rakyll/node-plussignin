@@ -1,0 +1,9 @@
+{
+  "name": "plussignin",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "googleapis": "*"
+  }
+}

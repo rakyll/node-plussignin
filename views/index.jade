@@ -1,0 +1,18 @@
+html
+  head
+    title Welcome to the sample app!
+    link(rel="stylesheet", type="text/css", href="public/main.css")
+  body
+    div.header
+      if plus.isLoggedIn
+        ul.profile
+          li
+            img.profile(src=plus.profile.image.url)
+          li= plus.profile.displayName
+          li
+            span (
+            a.logout(href="/logout") logout
+            span )
+        br(clear="both")
+      else
+        a.plus(href="/login") Sign In with Google+
