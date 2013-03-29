@@ -7,7 +7,6 @@ var CLIENT_ID = 'YOUR_CLIENT_ID_HERE',
     CLIENT_SECRET = 'YOUR_CLIENT_SECRET_HERE',
     REDIRECT_URI = 'http://localhost:3000/pluscallback',
     SCOPES = [
-      'https://www.googleapis.com/auth/plus.me',
       'https://www.googleapis.com/auth/plus.login'];
 
 app.set('view engine', 'jade');

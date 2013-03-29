@@ -26,7 +26,7 @@ function handle(opts, req, res, next) {
   if(req.path == '/login') {
     // redirect user to auth page.
     var scope = (opts.scopes || []).join(' ');
-    res.redirect(req.plus.oauth2.generateAuthUrl({ scope: scope, approval_prompt: 'force' }));
+    res.redirect(req.plus.oauth2.generateAuthUrl({ scope: scope }));
   } else if (req.path == '/pluscallback') {
     // handle the callback from oauth2
     req.plus.oauth2.getToken(req.query.code, function(err, response) {
