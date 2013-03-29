@@ -1,7 +1,9 @@
 # node-plussignin
 
-`plussignin` module helps you to add Google+ Sign In to your Connect application
-in a few steps. Add a session middleware and plussignin to your app:
+`plussignin` module helps you to add
+[Google+ Sign In](https://developers.google.com/+/features/sign-in)
+to your Connect application in a few steps. Add a session middleware and
+plussignin to your app:
 
 	app.use(express.cookieParser('something secret'));
 	app.use(express.session({ secret: 'yet another secret', store: new MemoryStore() }));
