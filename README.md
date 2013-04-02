@@ -1,5 +1,7 @@
 # node-plussignin
 
+![Screenshot](https://github.com/burcu/node-plussignin/raw/master/screenshot.png)
+
 `plussignin` module helps you to add
 [Google+ Sign In](https://developers.google.com/+/features/sign-in)
 to your Connect application in a few steps. Add a session middleware and
