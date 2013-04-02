@@ -2,17 +2,11 @@ html
   head
     title Welcome to the sample app!
     link(rel="stylesheet", type="text/css", href="public/main.css")
-  body
-    div.header
-      if plus.isLoggedIn
-        ul.profile
-          li
-            img.profile(src=plus.profile.image.url)
-          li= plus.profile.displayName
-          li
-            span (
-            a.logout(href="/logout") logout
-            span )
-        br(clear="both")
-      else
-        a.plus(href="/login") Sign In with Google+
+  body.container
+    if plus.profile
+      div.profile.mcell
+        a(href=plus.profile.url)
+          img(src=plus.profile.image.url)
+    else
+      span.mcell
+        a.signin(href="/login") Sign In with Google+
