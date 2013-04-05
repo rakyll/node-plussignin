@@ -4,6 +4,6 @@
   "dependencies": {
     "express": "*",
     "jade": "*",
-    "googleapis": "*"
+    "googleapis": "0.2.3-alpha"
   }
 }
